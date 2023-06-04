@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帶您認識首都-AI小工具</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class="body">
+  <form action="/" method="post">
+    <div class="card">
+      <img
+        src="https://illustcenter.com/wp-content/uploads/2021/11/rdesign_0048-508x381.png"
+        alt="pokemon_logo" class="card-img">
+      <h1 class="card-title">帶您認識各國首都</h1>
+      <p class="card-text">
+        <% if (description.length) { %>
+          <%= description %>
+        <% } else { %>
+          <%= '' %>
+        <% } %>
+      </p>
+      <input type="text" name="description" class="card-input" placeholder="請輸入國家名稱" />
+      <button type="submit" class="card-btn">送出</button>
+    </div>
+  </form>
+</body>
+
+</html>
